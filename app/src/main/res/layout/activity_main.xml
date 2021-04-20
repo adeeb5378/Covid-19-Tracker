@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/covidImage"
+        android:src="@drawable/covidimage"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:id="@+id/covidtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid 19 Tracker"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/dark_green"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@id/covidImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/countryWise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country Wise"
+        android:textSize="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/dark_yellow"
+        app:layout_constraintTop_toBottomOf="@id/covidtext"
+        android:layout_marginTop="60dp"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/stateWise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indian State Wise"
+        android:textSize="16dp"
+        android:padding="16dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/dark_yellow"
+        app:layout_constraintTop_toBottomOf="@id/countryWise"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/districtWise"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Indian District Wise"-->
+<!--        android:textSize="16dp"-->
+<!--        android:padding="16dp"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:textColor="@color/dark_yellow"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/stateWise"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"/>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
